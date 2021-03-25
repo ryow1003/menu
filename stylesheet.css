@@ -1,0 +1,129 @@
+body{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding:0;
+  margin: 0;
+}
+
+/* ハンバーガーメニュー */
+.menu {
+  display : block;
+  position: fixed;
+  z-index : 3;
+  right : 13px;
+  top   : 12px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.menu span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  left    : 6px;
+  background : #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.menu span:nth-child(1) {
+  top: 10px;
+}
+.menu span:nth-child(2) {
+  top: 20px;
+}
+.menu span:nth-child(3) {
+  top: 30px;
+}
+
+/* OPEN後のボタン */
+.menu.active {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition     : all 0.3s ease-in-out;
+  transition        : all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay     : 0.6s;
+  transition-delay        : 0.6s;
+  -webkit-transform: rotate(45deg);
+  -ms-transform    : rotate(45deg);
+  -o-transform     : rotate(45deg);
+  transform        : rotate(45deg);
+}
+.menu.active span:nth-child(2){
+  width: 0px;
+}
+.menu.active span:nth-child(1),
+.menu.active span:nth-child(3){
+  background :#fff;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.menu.active span:nth-child(1){
+  -webkit-transform: translateY(4px);
+  -ms-transform    : translateY(4px);
+  -o-transform     : translateY(4px);
+  transform        : translateY(4px);
+}
+.menu.active span:nth-child(3){
+  -webkit-transform: translateY(-16px) rotate(90deg);
+  -ms-transform: translateY(-16px) rotate(90deg);
+  -o-transform : translateY(-16px) rotate(90deg);
+  transform    : translateY(-16px) rotate(90deg);
+}
+nav.menu-after {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+nav.menu-after ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+nav.menu-after ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+}
+nav.menu-after ul li:last-child {
+  padding-bottom: 0;
+}
+nav.menu-after ul li:hover{
+  background :#ddd;
+}
+nav.menu-after ul li a {
+  display: block;
+  color: #fff;
+  padding: 1em 0;
+  text-decoration :none;
+}
+
+/* jQueryで付け替え */
+nav.menu-after.active {
+  opacity: 100;
+}
+
+/* HEADER */
+header{
+  width:100vw;
+  max-width: 100vw;
+  height:80px;
+  text-align: center;
+  background-color:#555;
+}
+header img{
+  width:80px;
+  height:80px;
+}
