@@ -4,11 +4,8 @@ body{
   overflow-x: hidden;
   padding:0;
   margin: 0;
-  height:100vh;
-  background-repeat:no-repeat;
-  background-position:50% 100%;
   background-image: url('pic/background.jpg');
-  background-size:cover;
+  background-attachment: fixed;
 }
 
 
