@@ -575,8 +575,33 @@ header img{
 /* FOOTER */
 footer{
   width:80%;
-  padding:30px 10%;
+  padding:30px 10% 5px 10%;
   background-color: #161e29;
   color:white;
+  display:flex;
+  flex-direction: column;
+  position: relative;
 }
+footer img{
+  width:100px;
+  height:100px;
+  position: absolute;
+  top:20px;
+  right:20px;
+}
+footer p,footer a{
+  margin:0;
+  padding:5px 0;
+  font-size: 12px;
+  text-decoration: none;
+  color:#fff
+}
+footer h4{
+  margin: 0;
+  padding-top: 20px;
+}
+footer h6{
+  margin: 0;
+}
+
 
