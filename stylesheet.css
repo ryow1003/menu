@@ -218,6 +218,54 @@ nav.menu-after.active {
 }
 
 
+/* スクロールボタン */
+#scroll{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  opacity: 0.9;
+}
+#scroll a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius:50% 0 0 50%;
+}
+#scroll a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: black;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#scroll a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: black;
+}
+
+
 /* HEADER */
 header{
   width:100vw;
