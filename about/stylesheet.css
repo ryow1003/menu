@@ -126,6 +126,9 @@ nav.menu-after ul li a {
   padding: 30px 0;
   text-decoration :none;
 }
+nav.menu-after ul li a:hover{
+  color:#565656;
+}
 
 /* jQueryで付け替え */
 nav.menu-after.active {
