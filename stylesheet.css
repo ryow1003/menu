@@ -205,7 +205,11 @@ nav.menu-after ul li a {
   display: block;
   color: #fff;
   padding: 30px 0;
+  width:100%;
   text-decoration :none;
+}
+nav.menu-after ul li a:hover{
+  color:#565656;
 }
 
 /* jQueryで付け替え */
