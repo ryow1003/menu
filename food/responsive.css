@@ -4,9 +4,36 @@
     max-width:600px;
     margin:0 auto;
   }
+  body::before{
+    width:600px;
+    max-width: 600px;
+    margin: 0 auto;
+    right:0;
+  }
   header{
     width: 600px;
     max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width:415px){
+  html{
+    background-color: black;
+  }
+  body{
+    width:414px;
+    max-width:414px;
+    margin:0 auto;
+  }
+  body::before{
+    width:414px;
+    max-width: 414px;
+    margin: 0 auto;
+    right:0;
+  }
+  header{
+    width: 414px;
+    max-width: 414px;
     margin: 0 auto;
   }
 }
