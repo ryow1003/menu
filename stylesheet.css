@@ -274,11 +274,38 @@ header{
   text-align: center;
   background-color:#161e29;
   position: fixed;
+  top:0;
   z-index: 5;
 }
 header img{
   width:80px;
   height:80px;
+}
+
+/* メッセージ */
+.message{
+  width: 100%;
+  background-color: #F07E73;
+  top:80px;
+  position: fixed;
+}
+.message p{
+  margin:0;
+  color:white;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left:724px;
+  display:inline-block;
+  white-space:nowrap;
+  animation-name:marquee;
+  animation-timing-function:ease-in-out;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+}
+@keyframes marquee {
+  from   { transform: translate(0%);}
+  99%,to { transform: translate(-100%);}
 }
 
 /* メインコンテンツ */
@@ -288,7 +315,7 @@ header img{
   height:auto;
   margin:0 5%;
   text-align: center;
-  padding:80px 0 10px 0;
+  padding:100px 0 10px 0;
 }
 .main-content h1{
   color:white;
