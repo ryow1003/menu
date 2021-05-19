@@ -213,9 +213,9 @@ header img{
   flex-wrap: wrap;
 }
 .menu-branch a{
-  width:35%;
-  padding:12px 2.5%;
-  margin: 50px 5% 0 5%;
+  width:30%;
+  padding:12px 0.5%;
+  margin:0 1%;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
